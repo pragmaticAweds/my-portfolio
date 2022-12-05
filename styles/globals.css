@@ -1,9 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hind+Siliguri:wght@300;400;500;600;700&family=Satisfy&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Hind Siliguri", "Satisfy", "Bebas Neue", -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 a {
@@ -15,7 +25,36 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+nav {
+  @apply flex justify-between items-center px-6 border border-b-[#E5E7EB] bg-white h-20;
+}
+
+.nav-links {
+  @apply flex gap-x-4;
+}
+
+.nav-link {
+  @apply flex items-center gap-x-[0.1rem] cursor-pointer;
+}
+
+main {
+  @apply max-w-[80%] mx-auto flex flex-col overflow-auto py-8;
+  height: calc(100vh - 4rem);
+}
+
+.hero-content {
+  @apply grid place-content-center;
+}
+
+.hero-img {
+  @apply relative flex justify-center items-center;
+}
+
+.hero-img > img {
+  @apply object-cover rounded-full;
+}
+
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -23,4 +62,4 @@ a {
     color: white;
     background: black;
   }
-}
+} */
