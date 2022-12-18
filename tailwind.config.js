@@ -11,6 +11,9 @@ module.exports = {
         satisfy: ["Satisfy", "sans-serif"],
         bebas: ["Bebas\\ Neue", "cursive"],
       },
+      backgroundColor: {
+        "pj-bg": "#C1E5C0",
+      },
     },
   },
   plugins: [],

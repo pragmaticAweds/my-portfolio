@@ -26,7 +26,7 @@ a {
 }
 
 nav {
-  @apply flex justify-between items-center px-6 border border-b-[#E5E7EB] bg-white h-20;
+  @apply flex justify-between items-center px-6 border border-b-[#E5E7EB] bg-white py-5;
 }
 
 .nav-links {
@@ -38,16 +38,15 @@ nav {
 }
 
 main {
-  @apply max-w-[80%] mx-auto flex flex-col overflow-auto py-8;
-  height: calc(100vh - 4rem);
+  @apply flex-grow overflow-auto;
 }
 
-.hero-content {
-  @apply grid place-content-center;
+header {
+  @apply flex flex-col items-center pt-10 h-[60vh];
 }
 
 .hero-img {
-  @apply relative flex justify-center items-center;
+  @apply relative flex justify-center items-center rounded-full;
 }
 
 .hero-img > img {
