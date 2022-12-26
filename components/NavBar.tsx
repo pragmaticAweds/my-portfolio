@@ -4,8 +4,8 @@ import React from "react";
 const NavBar = () => {
   const links = [
     { label: "about me", to: "" },
-    { label: "work", to: "#projects" },
     { label: "experience", to: "#exp" },
+    { label: "work", to: "#projects" },
     { label: "blog", to: "" },
     { label: "contact", to: "" },
   ];
