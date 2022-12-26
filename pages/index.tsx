@@ -18,20 +18,6 @@ export default function Home() {
         <main>
           <Header />
           <Projects />
-
-          <section className=" h-[30rem] relative">
-            <div className="absolute h-[30rem] w-[50%]">
-              <Image
-                src="/imgs/art-1.webp"
-                alt="section-img"
-                fill
-                quality={100}
-              />
-            </div>
-          </section>
-          <section className="bg-[#C1E5C0] h-[30rem]">
-            <div className=""></div>
-          </section>
         </main>
         <footer></footer>
       </div>

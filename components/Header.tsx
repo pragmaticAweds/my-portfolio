@@ -3,7 +3,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header>
+    <header className="center">
       <div className="hero-img">
         <Image
           src="/imgs/avatar.webp"
