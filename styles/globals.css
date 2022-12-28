@@ -26,7 +26,7 @@ a {
 }
 
 .center {
-  @apply max-w-[85%] w-full mx-auto;
+  @apply max-w-[70%] w-full mx-auto;
 }
 
 nav {
@@ -50,19 +50,23 @@ main {
 }
 
 header {
-  @apply flex flex-col items-center pt-10 h-[60vh];
+  @apply flex flex-col justify-center pt-10 h-[90vh];
 }
 
 .hero-img {
-  @apply relative flex justify-center items-center rounded-full;
+  @apply relative w-full flex items-end after:absolute after:h-full after:w-full after:border-[0.5px] after:border-[#192d49]  after:-bottom-5 after:-right-5 after:rounded-md;
 }
 
 .hero-img > img {
-  @apply object-cover rounded-full;
+  @apply object-cover object-right-bottom rounded-md z-10;
 }
 
 .sub-project {
-  @apply bg-pj-bg h-[85vh] w-4/5 ml-auto relative pt-8;
+  @apply h-[55vh] w-[60%] relative;
+}
+
+button {
+  @apply bg-pj-bg2 outline-none border-none text-white self-start px-8 py-3 mt-6 rounded-md text-lg hover:bg-[#0e1a2b] transition-all duration-300;
 }
 
 /* @media (prefers-color-scheme: dark) {

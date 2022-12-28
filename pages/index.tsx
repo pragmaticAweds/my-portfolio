@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import AboutMe from "../components/About";
 import Header from "../components/Header";
 import NavBar from "../components/NavBar";
 import Projects from "../components/Projects";
@@ -16,8 +17,11 @@ export default function Home() {
       <div className="h-screen w-screen overflow-hidden flex flex-col">
         <NavBar />
         <main>
-          <Header />
-          <Projects />
+          <div className="center">
+            <Header />
+            <AboutMe />
+            <Projects />
+          </div>
         </main>
         <footer></footer>
       </div>

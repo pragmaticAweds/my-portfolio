@@ -13,6 +13,8 @@ module.exports = {
       },
       backgroundColor: {
         "pj-bg": "#C1E5C0",
+        "pj-bg2": "#192d49",
+        "txt-grey": "#b9b9b9",
       },
     },
   },
